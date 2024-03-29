@@ -1,0 +1,19 @@
+﻿internal enum TerminalFeatures
+{
+    FlagScp,
+    LightManagement,
+    BaseDoorManagement,
+    HighDoorManagement,
+    CompleteDoorManagement,
+    OverrideKeycardPermissions,
+    RoomLockdowm,
+    ZoneLockdown,
+    CompleteZoneLockdown,
+    TerminationOrders,
+    Panic,
+    Navigator,
+    ElevatorControl,
+    ElevatorLockdown,
+    ScpCount,
+    ChaosCount
+}
