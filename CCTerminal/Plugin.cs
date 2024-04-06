@@ -1,4 +1,5 @@
-﻿using Exiled.API.Features;
+﻿using CCTerminal.Elements;
+using Exiled.API.Features;
 using MapGeneration;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace CCTerminal
         public override Version Version => new(0, 5, 0);
         public override Version RequiredExiledVersion => new(8, 8, 0);
         public static Plugin Instance;
-        public static Terminal
+        public static Dictionary<int, Terminal> Terminals;
         public override void OnEnabled()
         {
             base.OnEnabled();

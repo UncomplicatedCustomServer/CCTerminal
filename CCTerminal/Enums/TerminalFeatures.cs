@@ -15,5 +15,6 @@
     ElevatorControl,
     ElevatorLockdown,
     ScpCount,
-    ChaosCount
+    ChaosCount,
+    Base
 }

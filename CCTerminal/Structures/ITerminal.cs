@@ -11,8 +11,13 @@ namespace CCTerminal.Structures
     {
         public abstract int Id { get; }
         public abstract Player Owner { get; }
+        public abstract float Battery { get; }
+        public abstract bool IsActive { get; set; }
         public abstract List<TerminalFeatures> Features { get; }
         public abstract Dictionary<string, string> Files { get; }
         public abstract List<ICommand> Commands { get; }
+        public abstract Dictionary<ICommand, ulong> CommandCooldownHandler { get; }
+        public void Execute(string CommandInput);
+        public void Tick();
     }
 }

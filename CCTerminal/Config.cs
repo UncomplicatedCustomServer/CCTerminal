@@ -14,5 +14,7 @@ namespace CCTerminal
         public bool IsEnabled { get; set; } = true;
         [Description("Do enable the developer (debug) mode")]
         public bool Debug { get; set; } = false;
+        [Description("The battery amout that will be removed every tick (1s)")]
+        public float TickBattery { get; set; } = 0.3f;
     }
 }
